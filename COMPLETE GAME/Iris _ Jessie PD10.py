@@ -21,7 +21,6 @@ cloud = Image("cloud.jpg",game)
 htpp = Image("htpp.png", game)
 
 #sound
-shoot = Sound("shoot.wav",1)
 bgm = Sound("222.wav",2)
 collision = Sound("111.wav",3)
 bubble = Sound("bbbubble.wav",4)
@@ -396,7 +395,6 @@ while not game.over: #and key == 15:
     for index in range(50):
         pepper2[index].move()
         if keys.Pressed[K_SPACE]:
-            shoot.play()
             pepper2[index].moveTo(player1.x, player1.y)
             pepper2[index]. visible = True
             
@@ -405,7 +403,6 @@ while not game.over: #and key == 15:
     for index in range(50):
         pepper3[index].move()
         if keys.Pressed[K_KP_ENTER]:
-            shoot.play()
             pepper3[index].moveTo(player2.x, player2.y)
             pepper3[index].visible = True
         
